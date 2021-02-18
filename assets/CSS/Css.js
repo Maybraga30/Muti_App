@@ -74,10 +74,8 @@ const styles = StyleSheet.create({
         borderBottomColor: '#f2f2f2',
         flexDirection: 'row',
         marginTop: 6
-        
-        
-        
     },
+   
 });
 
 export {styles};

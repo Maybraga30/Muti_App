@@ -5,7 +5,7 @@ import { Value } from 'react-native-reanimated';
 import {styles} from '../assets/CSS/Css';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-export default function Login()
+export default function Login(props)
 {
     return(
       <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[styles.container, styles.darkbg]}>
@@ -33,13 +33,18 @@ export default function Login()
                 />
             <TextInput style={styles.login__input} placeholder='Sua senha:' secureTextEntry={true} />
             </View>
-            <TouchableOpacity style={[styles.login__button, {marginTop:30}]}>
+            <TouchableOpacity style={[styles.login__button, {marginTop:30}]} 
+            onPress ={()=>props.navigation.navigate('AboutUs')}>
                 <Text style={styles.login__buttonText}>Entrar</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={[styles.login__button2, {marginTop:10}]}>
+            
+            <TouchableOpacity style={[styles.login__button2, {marginTop:10}]} 
+            onPress ={()=>props.navigation.navigate('SignUp')}>
             <Text style={styles.login__buttonText2}>Cadastrar-se</Text>
             </TouchableOpacity>
+            
+            
          
          </View>
       </KeyboardAvoidingView>
