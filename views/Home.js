@@ -1,17 +1,32 @@
 import React from 'react';
-import { Text, View, Button} from 'react-native';
+import { Text, View, Button, Image} from 'react-native';
+import {styles} from '../assets/CSS/Css';
+import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 
 
 export default function Home(props) {
         
     return (
-        <View>
-            <Text>Esse é o componente Home</Text>
+
+            <ScrollView>
+    
+            <View style={styles.container3}>
+            <TouchableOpacity style={styles.sobre_img}><Image source={require('../assets/img/naturezaLixo.jpg')} />
+            </TouchableOpacity>
+             </View>
+             <View>
+                 <Text style={styles.text_about}>
+                 Somos uma equipe Somos uma equipe  Somos uma equipe 
+                  Somos uma equipe  Somos uma equipe  Somos uma equipe  
+                  Somos uma equipe Somos uma equipe  Somos uma equipe 
+                 </Text>
+             </View>
+             <View >
+             <TouchableOpacity style={styles.sobre_img}><Image source={require('../assets/img/naturezaLixo.jpg')} />
+            </TouchableOpacity>
+             </View>
+             </ScrollView>
             
-            <Button title="Ir para About Us" onPress ={()=>props.navigation.navigate('AboutUs')} />
-            <Button title="Ir para Login" onPress ={()=>props.navigation.navigate('Login')} />
-            <Button title="Ir para SignUp" onPress ={()=>props.navigation.navigate('SignUp')} />
-        </View>
-        
-    );
-}
+            
+        );
+    }

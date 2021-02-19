@@ -1,16 +1,18 @@
 import React from 'react';
-import { Text, View, Button, Alert } from 'react-native';
-import { styles } from "./assets/CSS/Css";
+import { Text, View, Button, ScrollView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import {Home, Login,AboutUs,Profile, Mutira, SignUp} from './views';
+import {Home, Login,AboutUs,Perfil, Mutira, SignUp, GuiaLixo} from './views';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 
   const HomeStack = createStackNavigator();
   const LoginStack = createStackNavigator();
+  const SignUpStack = createStackNavigator();
+  const PerfilStack = createStackNavigator();
   const AboutUsStack = createStackNavigator();
+  const GuiaLixoStack = createStackNavigator();
 
   const Drawer = createDrawerNavigator();
 
@@ -22,7 +24,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
     headerTintColor: '#FFF',
     headerTitleStyle: {
       fontWeight: 'bold', 
-      alignSelf:'center'
+      alignSelf:'center',
+      paddingRight: 50,
     }
   }}>
           <HomeStack.Screen 
@@ -47,7 +50,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
         headerTintColor: '#FFF',
         headerTitleStyle: {
           fontWeight: 'bold', 
-          alignSelf:'center'
+          alignSelf:'center',
+          paddingRight: 50,
         }
       }}>
               <LoginStack.Screen 
@@ -74,13 +78,14 @@ import Icon from 'react-native-vector-icons/Ionicons';
         headerTintColor: '#FFF',
         headerTitleStyle: {
           fontWeight: 'bold', 
-          alignSelf:'center'
+          alignSelf:'center',
+          paddingRight: 50,
         }
       }}>
               <AboutUsStack.Screen 
               name="AboutUs" 
               component={AboutUs} options={{
-                title:"Mutiraê",
+                title:"AboutUs",
                 headerLeft: () => (
                   <Icon.Button name="ios-menu" size={25} 
                   backgroundColor="#5867F0" onPress={() => 
@@ -90,6 +95,56 @@ import Icon from 'react-native-vector-icons/Ionicons';
               }} />
             </AboutUsStack.Navigator>
       );
+      const GuiaLixoStackScreen = ({navigation}) => (
+        <GuiaLixoStack.Navigator screenOptions={{
+          headerStyle: {
+          backgroundColor: '#5867F0',
+        },
+        headerTintColor: '#FFF',
+        headerTitleStyle: {
+          fontWeight: 'bold', 
+          alignSelf:'center',
+          paddingRight: 50,
+        }
+      }}>
+              <GuiaLixoStack.Screen 
+              name="GuiaLixo" 
+              component={GuiaLixo} options={{
+                title:"Separação do Lixo",
+                headerLeft: () => (
+                  <Icon.Button name="ios-menu" size={25} 
+                  backgroundColor="#5867F0" onPress={() => 
+                  {navigation.openDrawer()}}>
+                  </Icon.Button>
+                )
+              }} />
+            </GuiaLixoStack.Navigator>
+      );
+      const SignUpStackScreen = ({navigation}) => (
+        <SignUpStack.Navigator screenOptions={{
+          headerStyle: {
+          backgroundColor: '#5867F0',
+        },
+        headerTintColor: '#FFF',
+        headerTitleStyle: {
+          fontWeight: 'bold', 
+          alignSelf:'center',
+          paddingRight: 50,
+        }
+      }}>
+              <SignUpStack.Screen 
+              name="SignUp" 
+              component={SignUp} options={{
+                title:"Separação do Lixo",
+                headerLeft: () => (
+                  <Icon.Button name="ios-menu" size={25} 
+                  backgroundColor="#5867F0" onPress={() => 
+                  {navigation.openDrawer()}}>
+                  </Icon.Button>
+                )
+              }} />
+            </SignUpStack.Navigator>
+      );
 
   const App = () => {
     return (
@@ -97,7 +152,9 @@ import Icon from 'react-native-vector-icons/Ionicons';
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeStackScreen} />
         <Drawer.Screen name="Login" component={LoginStackScreen} />
+        <Drawer.Screen name="Cadastrar" component={SignUpStackScreen} />
         <Drawer.Screen name="AboutUs" component={AboutUsStackScreen} />
+        <Drawer.Screen name="Guia de Separação de Lixo" component={GuiaLixoStackScreen} />
       </Drawer.Navigator>
       </NavigationContainer>
     );

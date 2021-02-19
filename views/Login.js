@@ -4,13 +4,14 @@ import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
 import { Value } from 'react-native-reanimated';
 import {styles} from '../assets/CSS/Css';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import App from '../App';
 
 export default function Login(props)
 {
     return(
       <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[styles.container, styles.darkbg]}>
          <View style={styles.login__logomarca}>
-            <Image source={require('../assets/img/favicon.png')} />
+            <Image source={require('../assets/img/t.png')} />
          </View>
 
          <View style={styles.login__form}>

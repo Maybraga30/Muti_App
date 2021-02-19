@@ -7,11 +7,19 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    flex1: {
+        flex: 1,
+    },
     container2: {
         backgroundColor: '#FFF',
         alignItems: 'center',
         justifyContent: 'center',
-
+    },
+    container3: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        paddingTop: 25
     },
     textPage:{
         backgroundColor:'orange',
@@ -28,7 +36,8 @@ const styles = StyleSheet.create({
         marginBottom: 15,
     },
     login__form:{
-        width: "80%"
+        width: "80%",
+
     },
     login__input:{
         backgroundColor: "#fff",
@@ -40,7 +49,8 @@ const styles = StyleSheet.create({
         backgroundColor: "#5867F0",
         alignSelf:"center",
         borderRadius: 5,
-        width: 280
+        width: 280,
+        marginTop: 20,
     },
     login__button2:{
         padding: 10,
@@ -62,7 +72,11 @@ const styles = StyleSheet.create({
         alignSelf: 'center'
     },
     login__logomarca:{
-        marginBottom: 10
+        marginBottom: 5
+    },
+    login__logomarca2:{
+        marginTop: 15,
+
     },
     text_footer:{
         color: '#05375a',
@@ -75,7 +89,76 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         marginTop: 6
     },
-   
+   drawerContent: {
+       flex: 1
+   },
+   userInfoSction: {
+       paddingLeft: 20,
+   },
+   titleDrawer: {
+       fontSize: 16,
+       marginTop: 3,
+       fontWeight: 'bold',
+   } ,
+   caption: {
+       fontSize: 14,
+       lineHeight: 14,
+   },
+   row: {
+       marginTop: 20,
+       flexDirection: 'row',
+       alignItems: 'center'
+   },
+   section: {
+       flexDirection: 'row',
+       alignItems: 'center',
+       marginRight: 15,
+   },
+   paragraph: {
+       fontWeight: 'bold',
+       marginRight: 3,
+   },
+   drawerSection: {
+       marginTop: 15,
+   },
+   bottomDrawerSection: {
+       marginBottom: 15,
+       borderTopColor: '#f4f4f4',
+       borderTopWidth: 1,
+   },
+   preference: {
+       flexDirection: 'row',
+       justifyContent: 'space-between',
+       paddingVertical: 12,
+       paddingHorizontal: 16,
+   },
+   sobre_img: {
+       marginBottom: 10,
+   },
+   text_about:{
+        fontSize: 16,
+        padding: 10,
+        backgroundColor: "#DCDCDC",
+        alignSelf:"center",
+        borderRadius: 5,
+        width: 340
+   },
+   text_lixo: {
+    fontSize: 16,
+    padding: 10,
+    backgroundColor: "#DCDCDC",
+    alignItems: 'center',
+    borderRadius: 5,
+    width: 300,
+    marginBottom: 25
+   },
+   img_lixo:{
+       alignItems: 'center',
+   },
+   img_home:{
+       width: 7,
+       height: 20,
+   }
 });
 
 export {styles};
