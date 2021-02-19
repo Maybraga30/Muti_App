@@ -140,6 +140,7 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: "#DCDCDC",
         alignSelf:"center",
+        textAlign: 'center',
         borderRadius: 5,
         width: 340
    },

@@ -3,8 +3,9 @@ import { Text, View, Button, Image} from 'react-native';
 import {styles} from '../assets/CSS/Css';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import App from '../App';
+import { Paragraph } from 'react-native-paper';
 
-export default function AboutUs(navigation)
+export default function AboutUs(props)
 {
     return(
 
@@ -15,9 +16,11 @@ export default function AboutUs(navigation)
          </View>
          <View>
              <Text style={styles.text_about}>
-             Somos uma equipe Somos uma equipe  Somos uma equipe 
-              Somos uma equipe  Somos uma equipe  Somos uma equipe  
-              Somos uma equipe Somos uma equipe  Somos uma equipe 
+            <Paragraph> A Mutiraê tem como principal objetivo melhorar problemas da comunidade através da união entre vizinhos.
+             Nós sabemos que diversos bairros localizados nas regiões periféricas sofrem pela omissão do Estado, e cada bairro é
+              impactado por esta omissão de diferentes maneiras, com cada região tendo suas próprias necessidades e particularidades.
+             A Mutiraê foi desenvolvida para que essas necessidades pudessem ser supridas, definitivamente, parcialmente ou temporariamente 
+             por aqueles que mais entendem estas necessidades através da mobilização e organização. </Paragraph>
 
              </Text>
          </View>

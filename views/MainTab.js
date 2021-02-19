@@ -10,10 +10,6 @@ const HomeStack = createStackNavigator();
   const ProfileStack= createStackNavigator();
   const AboutUsStack = createStackNavigator();
   const GuiaLixoStack = createStackNavigator();
-  const LixoEletronicoStack = createStackNavigator();
-  const LixoOrganicoStack = createStackNavigator();
-  const LixoRemedioStack = createStackNavigator();
-  const LixoVidroStack = createStackNavigator();
 
 
   const Tab = createMaterialBottomTabNavigator();
@@ -229,4 +225,5 @@ const HomeStackScreen = ({navigation}) => (
             </ProfileStack.Navigator>
       );
 
+     
     

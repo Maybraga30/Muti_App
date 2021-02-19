@@ -22,10 +22,6 @@ export default function Home(props) {
                  e mobilize seus vizinhos para realizar ações em prol de todos.
                  </Text>
              </View>
-             <View >
-             <TouchableOpacity style={styles.sobre_img}><Image source={require('../assets/img/naturezaLixo.jpg')} />
-            </TouchableOpacity>
-             </View>
              </ScrollView>
             
             

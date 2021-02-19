@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Button, Image, ScrollView} from 'react-native';
 import {styles} from '../assets/CSS/Css';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { Link } from '@react-navigation/native';
+
 
 export default function GuiaLixo(props)
 {
@@ -57,4 +57,5 @@ export default function GuiaLixo(props)
          </ScrollView>
          );
     }
-         
+
+   

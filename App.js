@@ -10,8 +10,6 @@ import {SignUp, AboutUs, GuiaLixo, Login, Profile, LixoOrganico} from './views';
 
   const Drawer = createDrawerNavigator();
 
-  
-
   const App = () => {
     return (
       <NavigationContainer>
@@ -25,3 +23,6 @@ import {SignUp, AboutUs, GuiaLixo, Login, Profile, LixoOrganico} from './views';
       }
 
       export default App;
+
+    
+     
