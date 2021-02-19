@@ -4,7 +4,7 @@ import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
 import { Value } from 'react-native-reanimated';
 import {styles} from '../assets/CSS/Css';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import App from '../App';
+import MainTab from './MainTab';
 
 export default function Login(props)
 {

@@ -4,7 +4,7 @@ import {styles} from '../assets/CSS/Css';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import App from '../App';
 
-export default function AboutUs(props)
+export default function AboutUs(navigation)
 {
     return(
 

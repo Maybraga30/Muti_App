@@ -9,17 +9,15 @@ export default function Home(props) {
     return (
 
             <ScrollView>
-    
             <View style={styles.container3}>
             <TouchableOpacity style={styles.sobre_img}><Image source={require('../assets/img/naturezaLixo.jpg')} />
             </TouchableOpacity>
              </View>
              <View>
                  <Text style={styles.text_about}>
-                 Se junte aos seus vizinhos
-                 Quando trabalhamos em conjunto com a nossa comunidade 
-                 conseguimos bons resultados, cadastre-se na Mutiraê 
-                 e mobilize seus vizinhos para realizar ações em prol de todos.
+                 Somos uma equipe Somos uma equipe  Somos uma equipe 
+                  Somos uma equipe  Somos uma equipe  Somos uma equipe  
+                  Somos uma equipe Somos uma equipe  Somos uma equipe 
                  </Text>
              </View>
              <View >

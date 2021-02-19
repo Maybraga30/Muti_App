@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
    img_home:{
        width: 7,
        height: 20,
-   }
+   },
 });
 
 export {styles};
