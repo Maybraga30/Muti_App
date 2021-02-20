@@ -4,7 +4,7 @@ import {styles} from '../assets/CSS/Css';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Link } from '@react-navigation/native';
 
-export default function DicasLixo(props)
+export default function LixoRemedio(props)
 {
     return(
         <View style={styles.container3}>
