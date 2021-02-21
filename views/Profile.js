@@ -4,26 +4,40 @@ import {styles} from '../assets/CSS/Css';
 import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 
 
-export default function Home(props) {
+export default function Profile(props) {
         
     return (
 
             <ScrollView>
-            <View style={styles.container3}>
-            <TouchableOpacity style={styles.sobre_img}><Image source={require('../assets/img/naturezaLixo.jpg')} />
+            <View style={styles.container4}>
+            <TouchableOpacity style={styles.sobre_img}><Image source={require('../assets/img/calendario.png')} />
             </TouchableOpacity>
-             </View>
-             <View>
-                 <Text style={styles.text_about}>
-                 Somos uma equipe Somos uma equipe  Somos uma equipe 
-                  Somos uma equipe  Somos uma equipe  Somos uma equipe  
-                  Somos uma equipe Somos uma equipe  Somos uma equipe 
+            <View>
+                 <Text style={styles.textStrong}>
+                 Calendário dos Mutirões 
                  </Text>
-             </View>
-             <View >
-             <TouchableOpacity style={styles.sobre_img}><Image source={require('../assets/img/naturezaLixo.jpg')} />
+                 </View>
+                 <View style={styles.container5}>
+            <TouchableOpacity style={styles.sobre_img}>
+            <Image source={require('../assets/img/fala.png')} />
             </TouchableOpacity>
-             </View>
+             <View>
+                 <Text style={styles.textStrong}>
+                 Fórum e chat 
+                 </Text>
+                 </View>
+                 </View>
+                 </View>
+                 <View style={styles.container5}>
+            <TouchableOpacity style={styles.sobre_img}>
+            <Image source={require('../assets/img/bloco.png')} />
+            </TouchableOpacity>
+             <View>
+                 <Text style={styles.textStrong}>
+                 Cadastrar Mutirão
+                 </Text>
+                 </View>
+                 </View>
              </ScrollView>
             
             

@@ -9,6 +9,9 @@ import LixoOrganico from './LixoOrganico';
 import LixoRemedio from './LixoRemedio';
 import LixoVidro from './LixoVidro';
 import MainTab from  './MainTab';
+import DicasLixo from './DicasLixo';
+import LixoMascara from './LixoMascara';
+import Limpeza from './Limpeza';
 
-
-export {Home, Login, AboutUs, Profile, SignUp, GuiaLixo, LixoEletronico, LixoOrganico, LixoRemedio, LixoVidro, MainTab};
+export {Home, Login, AboutUs, Profile, SignUp, GuiaLixo,LixoEletronico, 
+    LixoOrganico, LixoRemedio, LixoVidro, MainTab, DicasLixo, Limpeza, LixoMascara};

@@ -18,8 +18,21 @@ const styles = StyleSheet.create({
     container3: {
         flex: 1,
         backgroundColor: '#fff',
+        alignItems: 'flex-start',
+        paddingTop: 25
+    },
+    container4: {
+        flex: 1,
+        backgroundColor: '#fff',
         alignItems: 'center',
         paddingTop: 25
+    },
+    container5: {
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        paddingTop: 25,
+        marginTop: 20,
     },
     textPage:{
         backgroundColor:'orange',
@@ -135,15 +148,29 @@ const styles = StyleSheet.create({
    sobre_img: {
        marginBottom: 10,
    },
+   sobre_img1: {
+    marginBottom: 10,
+    
+},
    text_about:{
         fontSize: 16,
         padding: 10,
         backgroundColor: "#DCDCDC",
-        alignSelf:"center",
-        textAlign: 'center',
+        alignSelf: "center",
+        textAlign: 'justify',
         borderRadius: 5,
         width: 340
    },
+   text_about2:{
+    fontSize: 16,
+    padding: 10,
+    backgroundColor: "#5867F0",
+    color: '#fff',
+    alignSelf: "center",
+    textAlign: 'center',
+    borderRadius: 5,
+    width: 340
+},
    text_lixo: {
     fontSize: 16,
     padding: 10,
@@ -160,6 +187,20 @@ const styles = StyleSheet.create({
        width: 7,
        height: 20,
    },
+   textStrong: {
+       fontSize: 16,
+    fontWeight: 'bold',
+   },
+   textStrong2: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 35,
+   },
+   
+   home_view: {
+       borderColor: 10,
+   }
 });
 
 export {styles};

@@ -11,12 +11,12 @@ const GuiaLixo = ({navigation}) =>  {
     return(
         
         <ScrollView>
-            <TouchableOpacity style={styles.img_lixo} onPress={() => navHome('') }>
-                <Image source={require('../assets/img/lixo.png')} />
+            <TouchableOpacity style={styles.img_lixo} onPress={() => navHome('Dicas') }>
+                <Image source={require('../assets/img/lixeira.png')} />
         
             <View style={styles.text_lixo}>
-             <Text>
-             Como começar. 
+             <Text style={styles.textStrong}>
+             Como começar
              </Text>
          </View>
          </TouchableOpacity> 
@@ -24,8 +24,8 @@ const GuiaLixo = ({navigation}) =>  {
              <Image source={require('../assets/img/organico.png')} />
         
             <View style={styles.text_lixo}>
-             <Text>
-            Lixo Orgânico. 
+             <Text style={styles.textStrong}>
+            Lixo Orgânico
              </Text>
          </View>
          </TouchableOpacity> 
@@ -33,8 +33,8 @@ const GuiaLixo = ({navigation}) =>  {
              <Image source={require('../assets/img/telefone.png')} />
         
             <View style={styles.text_lixo}>
-             <Text>
-             Lixo Eletrônico. 
+             <Text style={styles.textStrong}>
+             Lixo Eletrônico
              </Text>
          </View>
          </TouchableOpacity> 
@@ -42,17 +42,35 @@ const GuiaLixo = ({navigation}) =>  {
              <Image source={require('../assets/img/remedio.png')} />
         
             <View style={styles.text_lixo}>
-             <Text>
-             Lixo Remédio. 
+             <Text style={styles.textStrong}>
+             Medicamentos e Embalagens
              </Text>
          </View>
          </TouchableOpacity> 
          <TouchableOpacity style={styles.img_lixo} onPress={() => navHome('Vidro') }>
-             <Image source={require('../assets/img/vidro-quebrado.png')} />
+             <Image source={require('../assets/img/vidro.png')} />
         
             <View style={styles.text_lixo}>
-             <Text>
-             Medicamentos e Embalagens. 
+             <Text style={styles.textStrong}>
+                Descarte de Vidro
+             </Text>
+         </View>
+         </TouchableOpacity> 
+         <TouchableOpacity style={styles.img_lixo} onPress={() => navHome('Masc') }>
+             <Image source={require('../assets/img/facial.png')} />
+        
+            <View style={styles.text_lixo}>
+             <Text style={styles.textStrong}>
+             Descarte de Máscaras
+             </Text>
+         </View>
+         </TouchableOpacity> 
+         <TouchableOpacity style={styles.img_lixo} onPress={() => navHome('Limp') }>
+             <Image source={require('../assets/img/limpeza.png')} />
+        
+            <View style={styles.text_lixo}>
+             <Text style={styles.textStrong}>
+             Higienização do Lixo 
              </Text>
          </View>
          </TouchableOpacity> 

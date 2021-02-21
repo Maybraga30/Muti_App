@@ -36,7 +36,7 @@ export default function SignUp(props)
             <TextInput style={styles.login__input} placeholder='Estado:' /></View>
             
             
-            <TouchableOpacity style={styles.login__button} onPress ={()=>props.navigation.navigate('SignUpStackScreen')}>
+            <TouchableOpacity style={styles.login__button} onPress ={()=>props.navigation.navigate('Profile')}>
                 <Text style={styles.login__buttonText}>Cadastrar</Text>
             </TouchableOpacity>
          

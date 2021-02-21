@@ -59,19 +59,19 @@ export function DrawerContent(props) {
                 label="Home"
                 onPress={() => {props.navigation.navigate('Home')}}
                 />
-                <DrawerItem
+                 <DrawerItem
             icon={({color, size}) => (
-                <Icon name="account-outline"
+                <Icon name="account-check-outline"
                 color={color}
                 size={size}
                 />
             )}
-                label="Profile"
-                onPress={() => {props.navigation.navigate('Profile')}}
+                label="Login"
+                onPress={() => {props.navigation.navigate('Login')}}
                 />
                 <DrawerItem
             icon={({color, size}) => (
-                <Icon name="home-outline"
+                <Icon name="book-outline"
                 color={color}
                 size={size}
                 />
@@ -89,16 +89,7 @@ export function DrawerContent(props) {
                 label="Separação do lixo"
                 onPress={() => {props.navigation.navigate('GuiaLixo')}}
                 />
-                <DrawerItem
-            icon={({color, size}) => (
-                <Icon name="account-check-outline"
-                color={color}
-                size={size}
-                />
-            )}
-                label="Login"
-                onPress={() => {props.navigation.navigate('Login')}}
-                />
+               
               </Drawer.Section>
           </View>
         </DrawerContentScrollView>

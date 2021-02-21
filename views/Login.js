@@ -35,7 +35,7 @@ export default function Login(props)
             <TextInput style={styles.login__input} placeholder='Sua senha:' secureTextEntry={true} />
             </View>
             <TouchableOpacity style={[styles.login__button, {marginTop:30}]} 
-            onPress ={()=>props.navigation.navigate('AboutUs')}>
+            onPress ={()=>props.navigation.navigate('Profile')}>
                 <Text style={styles.login__buttonText}>Entrar</Text>
             </TouchableOpacity>
 

@@ -1,8 +1,9 @@
 import React from 'react';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import {Home, Login,AboutUs,Profile, SignUp, GuiaLixo} from '../views';
+import {Home, Login,AboutUs,Profile, SignUp, GuiaLixo, LixoOrganico} from '../views';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { NavigationContainer } from '@react-navigation/native';
 
 const HomeStack = createStackNavigator();
   const LoginStack = createStackNavigator();
@@ -10,6 +11,7 @@ const HomeStack = createStackNavigator();
   const ProfileStack= createStackNavigator();
   const AboutUsStack = createStackNavigator();
   const GuiaLixoStack = createStackNavigator();
+  const LixoOrganicoStack = createStackNavigator();
 
 
   const Tab = createMaterialBottomTabNavigator();
@@ -32,23 +34,23 @@ const HomeStack = createStackNavigator();
     />
     <Tab.Screen
       name="Login"
-      component={LoginStackScreen}
+      component={Login}
       options={{
-        tabBarLabel: 'Entrar',
+        tabBarLabel: 'Login',
         tabBarColor: '#5867F0',
         tabBarIcon: ({ color }) => (
-          <Icon name="ios-person" color={color} size={26} />
+          <Icon name="ios-log-in-sharp" color={color} size={26} />
         ),
       }}
     />
     <Tab.Screen
-      name="GuiaLixo"
+      name="Guia"
       component={GuiaLixoStackScreen}
       options={{
-        tabBarLabel: 'Guia',
+        tabBarLabel: 'Guia lixo',
         tabBarColor: '#5867F0',
         tabBarIcon: ({ color }) => (
-          <Icon name="ios-aperture" color={color} size={26} />
+          <Icon name="ios-newspaper" color={color} size={26} />
         ),
       }}
     />
@@ -57,7 +59,18 @@ const HomeStack = createStackNavigator();
       component={SignUpStackScreen}
       options={{
         tabBarLabel: 'Cadastrar',
-        tabBarColor: '#808080',
+        tabBarColor: '#5867F0',
+        tabBarIcon: ({ color }) => (
+          <Icon name="ios-person-add" color={color} size={26} />
+        ),
+      }}
+    />
+    <Tab.Screen
+      name="Profile"
+      component={ProfileStackScreen}
+      options={{
+        tabBarLabel: 'Perfil',
+        tabBarColor: '#5867F0',
         tabBarIcon: ({ color }) => (
           <Icon name="ios-aperture" color={color} size={26} />
         ),
@@ -68,6 +81,14 @@ const HomeStack = createStackNavigator();
   );
 
   export default MainTab;
+
+  const Stack = createStackNavigator();
+
+  <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Sobre Nós" component={AboutUs} />
+      </Stack.Navigator>
+    </NavigationContainer>
 
 
 const HomeStackScreen = ({navigation}) => (
@@ -189,7 +210,7 @@ const HomeStackScreen = ({navigation}) => (
               <SignUpStack.Screen 
               name="SignUp" 
               component={SignUp} options={{
-                title:"Separação do Lixo",
+                title:"Cadastre-se",
                 headerLeft: () => (
                   <Icon.Button name="ios-menu" size={25} 
                   backgroundColor="#5867F0" onPress={() => 
@@ -225,5 +246,4 @@ const HomeStackScreen = ({navigation}) => (
             </ProfileStack.Navigator>
       );
 
-     
-    
+      
